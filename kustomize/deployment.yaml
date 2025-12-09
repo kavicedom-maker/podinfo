@@ -75,6 +75,9 @@ spec:
         volumeMounts:
           - name: data
             mountPath: /data
+  - deployment.yaml
+  - service.yaml
+  - hpa.yaml
       volumes:
         - name: data
           emptyDir: {}
