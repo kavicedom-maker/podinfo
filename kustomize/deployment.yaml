@@ -25,6 +25,8 @@ spec:
       containers:
       - name: podinfod
         image: ghcr.io/stefanprodan/podinfo:6.9.4
+         ports:
+        - containerPort: 9898
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
